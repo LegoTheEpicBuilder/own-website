@@ -1,0 +1,198 @@
+.kleineAfbeelding{
+    max-width: 50px;
+}
+
+li a{
+  color: grey !important;
+}
+
+body{
+  background-image: url(../images/backgrounds/GamingBackground.png);
+  background-repeat: repeat;
+  background-position: left top, right top;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+pre{
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  th{
+    padding: 10px;
+  }
+
+  td{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  td a{
+    text-decoration: none;
+    color: grey;
+  }
+
+  table img{
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  #custom-col-2{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #BTD6{
+    background-image: url(../images/backgrounds/BloonsBackground.webp);
+    background-repeat: repeat;
+    background-position: left top, right top;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+/*
+  #CityWarsTD{
+    background-image: url(../images/backgrounds/BrickTexture.png);
+    background-repeat: repeat;
+    background-position: left top, right top;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-blend-mode: multiply;
+  }
+*/
+  #BadNorth{
+    background-image: url(../images/backgrounds/BadNorthBoat.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #Hi-text{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .textOutline{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+  .textOutlineReverse{
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;  
+  }
+
+.double-background{
+  background-image: url(#), url(../images/backgrounds/CityWarsLightBlue.png), url(../images/backgrounds/CityWarsOrange.png);
+  background-position: center, left, right;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: 100% 100%, 50% 100%, 50% 100%;
+  display: flex;
+  z-index: -1;
+}
+
+#CityWarsTD_BannerBig{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: auto;
+  height: auto;
+  /*left: 100%;*/
+  top: 5%;
+  background-color: transparent;
+}
+
+#CityWarsTD_BannerBig img{
+  width: fit-content;
+  height: fit-content
+}
+
+.transparent-background{
+  background-color: transparent;
+}
+
+
+/* rating colors */
+/* 9-10*/
+.amazing{
+  color: darkgreen;
+}
+/* 7-8*/
+.great{
+  color: limegreen;
+}
+
+/* 5-6 */
+.decent{
+  color: yellowgreen;
+}
+
+/* < 5*/
+.bad{
+  color: red;
+}
+
+a:hover, button:hover {
+  color: black !important;
+}
+
+.selectedPage{
+  color: black !important;
+}
