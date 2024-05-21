@@ -7,7 +7,7 @@ li a{
 }
 
 body{
-  background-image: url(../../../own-website/images/reviewImages/backgrounds/GamingBackground.png);
+  background-image: url(../../images/reviewImages/backgrounds/GamingBackground.png);
   background-repeat: repeat;
   background-position: left top, right top;
   top: 0;
@@ -81,7 +81,7 @@ pre{
   }
 
   #BTD6{
-    background-image: url(../../../own-website/images/reviewImages/backgrounds/BloonsBackground.webp);
+    background-image: url(../../images/reviewImages/backgrounds/BloonsBackground.webp);
     background-repeat: repeat;
     background-position: left top, right top;
     background-size: cover;
@@ -106,7 +106,7 @@ pre{
   }
 */
   #BadNorth{
-    background-image: url(../../../own-website/images/reviewImages/backgrounds/BadNorthBoat.jpg);
+    background-image: url(../../images/reviewImages/backgrounds/BadNorthBoat.jpg);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -140,7 +140,7 @@ pre{
   }
 
 .double-background{
-  background-image: url(#), url(../../../own-website/images/reviewImages/backgrounds/CityWarsLightBlue.png), url(../../../own-website/images/reviewImages/backgrounds/CityWarsOrange.png);
+  background-image: url(#), url(../../images/reviewImages/backgrounds/CityWarsLightBlue.png), url(../../images/reviewImages/backgrounds/CityWarsOrange.png);
   background-position: center, left, right;
   background-repeat: repeat, no-repeat, no-repeat;
   background-size: 100% 100%, 50% 100%, 50% 100%;
