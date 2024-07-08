@@ -24,13 +24,13 @@
                 <div class="mx-auto border text-center">
                     <img src="../../images/InstagramImages/Instagram.png" class="px-5 mx-auto" style="height: auto; max-width: 100%;">
                     <div class="">
-                        <form>
+                        <form method="post">
                             <div class="form-group row m-2">
                                 <div class="col-12 col-lg-2">
                                     <label for='FormUsername'>Username</label>
                                 </div>
                                 <div class='col-12 col-lg-10'>
-                                    <input type="text" class="form-control" id="FormUsername" placeholder="" style="background-color: rgb(250, 250, 250);">
+                                    <input type="text" class="form-control" id="FormUsername" name="username" placeholder="" style="background-color: rgb(250, 250, 250);" required>
                                 </div>
                             </div>
                             <div class="form-group row m-2">
@@ -38,10 +38,10 @@
                                     <label for='FormPassword'>Password</label>
                                 </div>
                                 <div class='col-12 col-lg-10'>
-                                    <input type="password" class="form-control color-light" id="FormPassword" placeholder="" style="background-color: rgb(250, 250, 250);">
+                                    <input type="password" class="form-control color-light" id="FormPassword" name="password" placeholder="" style="background-color: rgb(250, 250, 250);" required>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary w-75 p-2 my-3">Log in</button>
+                            <button type="submit" name="createButton" class="btn btn-primary w-75 p-2 my-3">Log in</button>
                         </form>
                         <div class='my-5'>
                             <p><b>OR</b></p>
@@ -79,9 +79,25 @@
                     <a class='mx-2' style='text-decoration: none; color: black;' href="/">Instagram Lite</a>
                     <a class='mx-2' style='text-decoration: none; color: black;' href="/">Threads</a>
                 </footer>
-
             </div>
         </div>
     </div>
+
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+            
+            //creating new user controller
+            $instagramController = new InstagramController();
+
+            //login button clicked
+            if (isset($_POST['loginButton'])){
+                $username = $_POST['username'];
+                $password = $_POST['password'];
+                
+                $user = new Account($username, $password, null);
+                
+            }
+        }
+    ?>
 </body>
 </html>
