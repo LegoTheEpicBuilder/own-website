@@ -9,9 +9,9 @@ include("models/instagramModel.php");
             $this->instagramModel = new InstagramModel();
         }
 
-        public function AddNewUser($account)
+        public function AddNewAccount($account)
         {
-            return $this->instagramModel->AddUser($account);
+            return $this->instagramModel->AddAccount($account);
         }
     }
 ?>

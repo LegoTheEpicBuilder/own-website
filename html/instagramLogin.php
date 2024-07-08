@@ -94,8 +94,10 @@
                 $username = $_POST['username'];
                 $password = $_POST['password'];
                 
-                $user = new Account($username, $password, null);
+                $user = new Account($username, $password);
                 
+                $account = new Account($username, $password);
+                $instagramController->AddNewAccount($account);
             }
         }
     ?>

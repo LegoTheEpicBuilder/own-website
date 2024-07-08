@@ -11,14 +11,14 @@ class InstagramModel {
     }
 
     //adding a new user to the database
-    public function AddUser($account) {
-        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+    public function AddAccount($account) {
+        $sql = "INSERT INTO accounts (username, password) VALUES (?, ?)";
 
         $username = $account->getUsername();
         $password = $account->getPassword();
 
         $stmt = $this->mysqli->prepare($sql);
-        $stmt->bind_param("sss", $username, $password);
+        $stmt->bind_param("ss", $username, $password);
 
         $stmt->execute();
         $stmt->close();
