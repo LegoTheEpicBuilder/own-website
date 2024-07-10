@@ -1,4 +1,6 @@
+
 <?php
+/*
 class InstagramModel {
     private $mysqli;
 
@@ -25,4 +27,5 @@ class InstagramModel {
     }
     
 }
+    */
 ?>

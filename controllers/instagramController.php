@@ -1,4 +1,5 @@
 <?php
+/*
 include("models/instagramModel.php"); 
 
     class InstagramController{
@@ -14,4 +15,5 @@ include("models/instagramModel.php");
             return $this->instagramModel->AddAccount($account);
         }
     }
+        */
 ?>

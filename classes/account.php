@@ -1,4 +1,5 @@
 <?php
+/*
 //helpclass making it easier to add new reviews to the database
 
 class Account{
@@ -20,5 +21,5 @@ class Account{
     {
         return $this->password;
     }
-}
+}*/
 ?>
